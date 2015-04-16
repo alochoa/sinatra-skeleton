@@ -1,0 +1,58 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 22px;
+	color: grey;
+}
+
+legend {
+	color: white;
+}
+
+#formbox {
+	background-color: rgb(37, 94, 113);
+	padding-bottom: 20px;
+	border-radius: 5px;
+	padding-left: 50px;
+	padding-top: 50px;
+	color: white;
+}
+.center {
+	margin-right: auto;
+	/*margin-left: auto;*/
+	/*width: 250px;*/
+
+}
+
+input:hover {
+        /*background-color: lightcyan;*/
+        border-color:#999999;
+        /*margin-right: 50px;*/
+        /*width: 150px;*/
+        /*display: block;*/
+        color: grey;
+}
+input {
+	color: grey;
+}
+
+label {
+	width: 150px;
+	font-family: Roboto;
+  	font-weight: 100;
+}
+
+fieldset {
+  border-width: 2px;
+  /* size: a5; */
+  padding: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#Spansex {
+	margin-left: 15px;
+}

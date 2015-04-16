@@ -1,0 +1,37 @@
+<div class="container">
+	<h2>Profile</h2>
+	<form action="/profile/edit" method="post" class="form-horizontal">
+		<div class="form-group">
+			<label for="E-mail" class="col-sm-1 control-label">E-mail</label>
+			<div class="col-sm-4">
+				<input type="email" class="form-control" id="E-mail" name="email" placeholder="Email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="Password" class="col-sm-1 control-label">Password</label>
+			<div class="col-sm-4">
+				<input type="password" class="form-control" id="Password" name="password" placeholder="Password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="radio1" class="col-sm-1 control-label">Gender</label> 
+			<div class="col-sm-4">
+				<input type="radio" name="sex" value"male" id="radio1" checked="checked"><span id="Spansex"> Male</span>
+				<br>
+				<input type="radio" name="sex" value"female" id="radio2"><span id="Spansex"> Female</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="firstname" class="col-sm-1 control-label">First Name</label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="firstname" name="first" placeholder="First Name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="lastname" class="col-sm-1 control-label">Last Name</label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="lastname" name="last" placeholder="Last Name">
+			</div>
+		</div>
+	</form>
+</div>

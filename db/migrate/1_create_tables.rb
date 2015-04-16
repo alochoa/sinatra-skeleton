@@ -33,14 +33,14 @@ class CreateTables < ActiveRecord::Migration
         end 
 
         create_table :reviews do |t| #has_many
-            t.string :user
+            t.string :user #do i need one?
             t.string :rating
             t.string :recommend
             t.timestamps
         end
 
         create_table :comments do |t|
-            t.string :user
+            t.string :user #do i need one?
             t.string :comment
             t.timestamps
         end

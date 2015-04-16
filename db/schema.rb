@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 1) do
+ActiveRecord::Schema.define(version: 3) do
 
   create_table "actors", force: true do |t|
     t.string   "first_name"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 1) do
     t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "movie_id"
   end
 
   create_table "movies", force: true do |t|
@@ -37,6 +39,9 @@ ActiveRecord::Schema.define(version: 1) do
     t.string   "country"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "actor_id"
+    t.string   "genre"
   end
 
   create_table "reviews", force: true do |t|
@@ -45,6 +50,8 @@ ActiveRecord::Schema.define(version: 1) do
     t.string   "recommend"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "movie_id"
   end
 
   create_table "users", force: true do |t|
