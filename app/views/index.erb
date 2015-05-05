@@ -1,1 +1,13 @@
-<h1>Home Page</h1>
+<div class="container">
+	<h1>MY MOVIE DATABASE</h1>
+	<% @movies.each do |movie| %>
+	<h2><a href="/movies/<%= movie.id %>"><%= movie.name %></h2>
+	<% end %>
+	<!-- <a href="/movies"><h3>Go to My Movies!</h3></a>
+	<br>
+	<a href="/profile/edit"><h4>Edit My Profile</h4></a>
+	<br>
+	<a href="/login" class="btn btn-default">LOG IN</a>
+	<a href="/signup" class="btn btn-default">SIGN UP</a> -->
+
+</div>

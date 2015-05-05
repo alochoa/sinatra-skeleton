@@ -1,0 +1,15 @@
+<br>
+<br>
+<div id="formbox" class="col-md-6">
+	<div class="center">
+		<form method="Post" action="/movies/<%= @movie.id %>/comment_new">
+		<legend>New Comment</legend>
+			<div class="form-group">
+  				<label for="comment">Comment:</label>
+  				<textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</fieldset>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+<br>
+<br>
+<div class="container">
+	<h1>Welcome to your awesome movie database!</h1>
+	<br>
+	<table class="table table-striped">
+        <tr>
+          <th>Title</th>
+          <th>Year</th>
+          <th>Director</th>
+          <th>Length</th>
+          <th>Country</th>
+          <th>Genre</th>
+        </tr> 
+        <% current_user.movies.each do |movie| %>
+          <tr>
+            <td><a href="/movies/<%= movie.id %>"><%= movie.name %></a></td>
+            <td><%= movie.year %></td>
+            <td><%= movie.director %></td>
+            <td><%= movie.length %></td>
+            <td><%= movie.country %></td>
+            <td><%= movie.genre %></td>
+          </tr>
+        <% end %>    
+    </table>   
+
+    <a href="/movies/create" class="btn btn-default">Create a New Movie</a>
+</div>

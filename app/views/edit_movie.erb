@@ -1,0 +1,40 @@
+<br>
+<br>
+<div class="container">
+	<h2>Edit Movie</h2>
+	<form action="/movies/<%= @movie.id %>/update" method="post" class="form-horizontal">
+	<div class="movie">
+			<p class="form-group">
+				<label for="name">Title</label>
+				<input type="text" name="name" id="name" value="<%= @movie.name %>">
+			</p>
+			<p class="form-group">
+				<label for="year">Year</label>
+				<input type="text" name="year" id="year" value="<%= @movie.year %>">
+			</p>
+			<p class="form-group">
+				<label for="director-field">Director</label>
+				<input type="text" name="director" id="director-field" value="<%= @movie.director %>">
+			</p>
+			<p class="form-group">
+				<label for="length-field">Length</label>
+				<input type="text" name="length" id="length-field" value="<%= @movie.length %>">
+			</p>
+			<p class="form-group">
+				<label for="country-field">Country</label>
+				<input type="text" name="country" id="country-field" value="<%= @movie.country %>">
+			</p>
+			<p class="form-group">
+				<label for="genre">Genre</label>
+				<input type="text" name="genre" id="genre" value="<%= @movie.genre %>">
+			</p>
+	</div>
+		<div>
+			<button type="submit" class="btn btn-default">Update</button>
+		</div>
+		<div>
+		<br>
+			<a href="/movies" class="btn btn-default">My Movies</a>
+		</div>
+	</form>
+</div>

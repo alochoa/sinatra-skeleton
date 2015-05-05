@@ -1,0 +1,34 @@
+<br>
+<br>
+<div class="container">
+<div class="movie">
+	<h2><%= @movie.name %></h2>
+	<p><strong>Year: </strong><%= @movie.year %>
+	<p><strong>Director: </strong><%= @movie.director %></p>
+	<p><strong>Length: </strong><%= @movie.length%></p> 
+	<p><strong>Country: </strong><%= @movie.country %></p>
+	<p><strong>Genre: </strong><%= @movie.genre %></p>
+</div>
+	<div class="comments">
+		<h2>Comments</h2>
+		<table class="table table-striped">
+			<tr>
+				<th>User</th>
+				<th>Comment</th>
+			</tr>
+			<% @movie.comments.each do |comment| %>
+			<% if comment %>
+				<tr>
+					<td><%= comment.user.first_name %></td>
+					<td><%= comment.comment %></td>
+				</tr>
+				<% end %>				
+			<% end %>
+		</table>
+	<div>
+	<a href="/movies/<%= @movie.id %>/comment_new" class="btn btn-default">Write a Comment</a>
+	</div>
+	<br>
+	<a href="/movies/<%= @movie.id %>/edit" class="btn btn-default">Edit Movie</a>
+	</form>
+</div>

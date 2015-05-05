@@ -3,6 +3,10 @@ class Movie < ActiveRecord::Base
 	belongs_to :user
 	has_many :actors
 	has_many :comments
+
+	# def comments
+	#   Comment.where(:movie_id => self.id)
+	# end
 end
 
 
